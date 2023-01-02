@@ -7,10 +7,13 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 
 	switch(lvVersion){  //This is to abstract out the different Jenkinsfile conventions of setting version to 14.0 instead of 2014.
 	  case "22.3":
-		lvVersion="2022 Q3"
+		lvVersion="2022"
 		break
-	  case "18.0":
-		lvVersion="2018"
+	  case "22.0":
+		lvVersion="2022"
+		break
+          case "22.3":
+                lvVersion="2022"
 		break
 	  case "20.0":
 		lvVersion="2020"
